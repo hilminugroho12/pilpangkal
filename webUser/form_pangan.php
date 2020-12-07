@@ -14,7 +14,7 @@
         <br> <br>
         <h2 align="center">Form Pangan Lokal</h2>
         <div class="container">
-            <form action="pangan.php" method="post">
+            <form action="aksi_pangan.php" method="POST">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Judul Pangan Lokal</label>
                     <input type="text" name="judul" class="form-control" id="exampleFormControlInput1">
@@ -28,18 +28,6 @@
                     <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" name="foto">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-                <?php
-                    if (isset($_GET['submit'])){
-                        include "koneksi.php";
-                        $judul = $_GET['judul'];
-                        $deskripsi = $_GET['deskripsi'];
-                        $foto = $_GET['foto'];                        
-                        mysqli_query($kon," INSERT INTO `pangan_lokal` (`judul`, `deskripsi`, `foto`) 
-                        VALUES ('$judul','$deskripsi','$foto')");
-                        header("location:pangan.php");    
-                        };
-                        
-                ?>
             </form>
         </div>
 
