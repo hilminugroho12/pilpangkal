@@ -37,7 +37,9 @@ class Pangan extends BaseController {
     public function save() {
         $data = [
             'kode_pangan' => $this->request->getPost('kode'),
-            'nama_pangan' => $this->request->getPost('Pangan')
+            'nama_pangan' => $this->request->getPost('Pangan'),
+            'deskripsi' => $this->request->getPost('deskripsi'),
+            'foto' => $this->request->getPost('foto')
         ];
 
         $id = $this->request->getPost('id');
