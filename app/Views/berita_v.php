@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/img/pil.png');?>">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/img/pil.png');?>">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/img/pil.png');?>">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Pil Pangkal</title>
@@ -66,12 +66,12 @@
     <div class="section section-small section-get-started">
         <div class="parallax filter">
             <div class="image"
-                style="background-image: url('<?php echo base_url('assets/img/head_manfaat1.jpg');?>')">
+                style="background-image: url('<?php echo base_url('assets/img/head_berita1.jpg');?>')">
             </div>
             <div class="container">
                 <div class="content">
                     <div class="title-area">
-                        <h1 class="title-modern">Manfaat Pangan Lokal</h1>
+                        <h1 class="title-modern">Berita Pangan Lokal</h1>
                     </div>
                 </div>
 
@@ -84,10 +84,10 @@
         <div class="container">
             <div class="row">
                 <div class="title-area">
-                    <h2>Manfaat Pangan Lokal Indonesia</h2>
+                    <h2>Berita Pangan Lokal Kita!</h2>
                     <div class="separator separator-danger">✻</div>
-                    <p class="description">Mari menjelajah berbagai manfaat hasil bumi Indonesia!</p>
-                    <a href="<?php echo site_url('Manfaat/add');?>" type="btn btn-primary">Upload Manfaat Pangan Lokal</a>
+                    <p class="description">Berita terkini pangan lokal yang bisa diikuti setiap harinya!</p>
+                    <a href="<?php echo site_url('Berita/add');?>" type="btn btn-primary">Upload Berita Pangan Lokal</a>
                 </div>
             </div>
             <div class="row">
@@ -224,7 +224,7 @@
     <div class="section section-small section-get-started">
         <div class="parallax filter">
             <div class="image"
-                style="background-image: url('<?php echo base_url('assets/img/head3.jpg');?>`')">
+                style="background-image: url('<?php echo base_url('assets/img/head3.jpg');?>')">
             </div>
             <div class="container">
                 <div class="title-area">
