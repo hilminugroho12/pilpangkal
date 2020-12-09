@@ -3,7 +3,7 @@
 use CodeIgniter\Model;
 
 class Pangan_Model extends Model {
-    protected $table      = 'Pangan';
+    protected $table      = 'pangan_lokal';
     protected $primaryKey = 'kode_Pangan';
 
     protected $returnType     = 'object';

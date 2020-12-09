@@ -3,20 +3,20 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="img/pil.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/pil.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url('assets/img/pil.png');?>">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url('assets/img/pil.png');?>">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Pil Pangkal</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/gaia.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootsrap.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/gaia.css');?>">
 
     <!--     Fonts and icons     -->
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
-
+    
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                     <span class="icon-bar bar3"></span>
                 </button>
                 <a href="" class="navbar-brand">
-                    <img src="img/pil_pangkal.png">
+                    <img src="<?php echo base_url('assets/img/pil_pangkal.png');?>">
                 </a>
             </div>
             <div class="collapse navbar-collapse">
@@ -67,7 +67,7 @@
     <div class="section section-header">
         <div class="parallax filter">
             <div class="image"
-                style="background-image: url('img/head.jpg')">
+                style="background-image: url('<?php echo base_url('assets/img/head.jpg');?>')">
             </div>
             <div class="container">
                 <div class="content">
@@ -104,7 +104,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita1.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita1.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Trend sarapan sehat</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita2.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita2.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Jagung terus menjadi pilihan</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -128,7 +128,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita3.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Kentang Kekinian</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -145,7 +145,7 @@
 
     <div class="section section-our-team-freebie">
         <div class="parallax filter filter-color-black">
-            <div class="image" style="background-image:url('img/head2.jpg')">
+            <div class="image" style="background-image:url('<?php echo base_url('assets/img/head2.jpg');?>')">
             </div>
             <div class="container">
                 <div class="content">
@@ -160,7 +160,7 @@
                 <div class="row" style="color: black;">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita1.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita1.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Trend sarapan sehat</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita2.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita2.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Jagung terus menjadi pilihan</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita3.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Kentang Kekinian</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -212,7 +212,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita1.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita1.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Trend sarapan sehat</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -224,7 +224,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita2.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita2.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Jagung terus menjadi pilihan</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -236,7 +236,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="img/berita3.jpg" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title">Kentang Kekinian</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -255,7 +255,7 @@
     <div class="section section-small section-get-started">
         <div class="parallax filter">
             <div class="image"
-                style="background-image: url('img/head3.jpg')">
+                style="background-image: url('<?php echo base_url('assets/img/head3.jpg');?>')">
             </div>
             <div class="container">
                 <div class="title-area">
@@ -345,16 +345,16 @@
 </body>
 
 <!--   core js files    -->
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/jquery.min.js');?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/bootsrap.js');?>" type="text/javascript"></script>
 
 <!--  js library for devices recognition -->
-<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/modernizr.js');?>"></script>
 
 <!--  script for google maps   -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
-<script type="text/javascript" src="js/gaia.js"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/gaia.js');?>"></script>
 
 </html>
