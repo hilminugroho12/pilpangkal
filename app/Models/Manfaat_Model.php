@@ -2,14 +2,14 @@
 
 use CodeIgniter\Model;
 
-class Pangan_Model extends Model {
-    protected $table      = 'pangan_lokal';
-    protected $primaryKey = 'kode_Pangan';
+class Manfaat_Model extends Model {
+    protected $table      = 'manfaat';
+    protected $primaryKey = 'kode_manfaat';
 
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['kode_pangan', 'nama_pangan','deskripsi', 'foto'];
+    protected $allowedFields = ['kode_manfaat', 'judul','deskripsi', 'foto'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

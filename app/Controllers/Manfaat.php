@@ -1,36 +1,36 @@
 <?php
 namespace App\Controllers;
 
-use App\Models\Pangan_Model;
+use App\Models\Manfaat_Model;
 
-class Pangan extends BaseController {
+class Manfaat extends BaseController {
 
     public function __construct() {
         $this->session = \Config\Services::session();
 
-        $this->panganModel = new Pangan_Model();
+        $this->manfaatModel = new Manfaat_Model();
     }
 
     public function index() {   
         $data['session'] = $this->session->getFlashdata('response');
-        $data['dataPangan'] = $this->panganModel->findAll();
+        $data['dataManfaat'] = $this->manfaatModel->findAll();
 
-        echo view('pangan_v', $data);
+        echo view('manfaat_v', $data);
     }
 
     public function add() {        
-        echo view('pangan_form_v');
+        echo view('manfaat_form_v');
     }
 
     public function edit($id) {
-        $data['dataPangan'] = $this->panganModel->find($id);
+        $data['dataManfaat'] = $this->manfaatModel->find($id);
         
-        echo view('pangan_form_v', $data);        
+        echo view('manfaat_form_v', $data);        
     }
 
     public function save() {
         $data = [
-            'nama_pangan' => $this->request->getPost('nama'),
+            'judul' => $this->request->getPost('judul'),
             'deskripsi' => $this->request->getPost('deskripsi'),
             'foto' => $this->request->getPost('foto')
         ];
@@ -38,7 +38,7 @@ class Pangan extends BaseController {
         $id = $this->request->getPost('id');
 
         if (empty($id)) { //Insert
-            $response = $this->panganModel->insert($data);
+            $response = $this->manfaatModel->insert($data);
 
             if ($response) {
                 $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data berhasil disimpan.']);
@@ -46,9 +46,9 @@ class Pangan extends BaseController {
                 $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal disimpan.']);
             }
         } else { // Update
-            $where = ['kode_pangan' => $id];
+            $where = ['kode_manfaat' => $id];
 
-            $response = $this->panganModel->update($where, $data);
+            $response = $this->manfaatModel->update($where, $data);
             
             if ($response) {
                 $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data berhasil disimpan.']);
@@ -57,11 +57,11 @@ class Pangan extends BaseController {
             }
         }
 
-        return redirect()->to(site_url('Pangan'));
+        return redirect()->to(site_url('Manfaat'));
     }
 
     public function delete($id) {
-        $response = $this->panganModel->delete($id);
+        $response = $this->manfaatModel->delete($id);
         
         if ($response) {
             $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data berhasil dihapus.']);
@@ -69,7 +69,7 @@ class Pangan extends BaseController {
             $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
         }
 
-        return redirect()->to(site_url('Pangan'));
+        return redirect()->to(site_url('Manfaat'));
     }
 
 }

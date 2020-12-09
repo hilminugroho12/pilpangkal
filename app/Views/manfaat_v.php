@@ -20,7 +20,7 @@
 
 <body>
 
-   <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
         <div class="container">
             <div class="navbar-header">
@@ -37,19 +37,19 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a href="<?php echo site_url('Beranda');?>">Beranda</a></li>
+                        <a href="index.php">Beranda</a></li>
                     <li>
                     <li>
-                        <a href="<?php echo site_url('Pangan');?>">Pangan Lokal</a>
+                        <a href="pangan.php">Pangan Lokal</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Berita');?>">Berita</a>
+                        <a href="berita.php">Berita</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Manfaat');?>">Manfaat</a>
+                        <a href="manfaat.php">Manfaat</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Resep');?>">Resep</a>
+                        <a href="resep.php">Resep</a>
                     </li>
                     <li>
                         <form class="form-inline">
@@ -62,15 +62,16 @@
         </div>
     </nav>
 
+
     <div class="section section-small section-get-started">
         <div class="parallax filter">
             <div class="image"
-                style="background-image: url('<?php echo base_url('assets/img/head_pangan1.jpg');?>')">
+                style="background-image: url('<?php echo base_url('assets/img/head_manfaat1.jpg');?>')">
             </div>
             <div class="container">
                 <div class="content">
                     <div class="title-area">
-                        <h1 class="title-modern">Pangan Lokal Indonesia</h1>
+                        <h1 class="title-modern">Manfaat Pangan Lokal</h1>
                     </div>
                 </div>
 
@@ -83,19 +84,18 @@
         <div class="container">
             <div class="row">
                 <div class="title-area">
-                    <h2>Pangan Lokal Kita!</h2>
+                    <h2>Manfaat Pangan Lokal Indonesia</h2>
                     <div class="separator separator-danger">✻</div>
-                    <p class="description">Hasil bumi Indonesia</p>
-
-                    <a href="<?php echo site_url('Pangan/add');?>" type="btn btn-primary">Upload Pangan Lokal</a>
+                    <p class="description">Mari menjelajah berbagai manfaat hasil bumi Indonesia!</p>
+                    <a href="form_manfaat.php" type="btn btn-primary">Upload Manfaat Pangan Lokal</a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="<?php echo base_url('assets/img/kentang.jpg');?>" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita1.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang</h3>
+                            <h3 class="card-title">Trend sarapan sehat</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
                             <div class="text-right">
                                 <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
@@ -103,11 +103,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
-                        <img src="<?php echo base_url('assets/img/jagung.jpg');?>" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/berita2.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Jagung</h3>
+                            <h3 class="card-title">Jagung terus menjadi pilihan</h3>
                             <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
                             <div class="text-right">
                                 <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
@@ -115,31 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/ubi.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Ubi</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-6">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/pisang.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Pisang</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
@@ -151,7 +127,67 @@
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-6">
+                 <div class="col-md-4">
+                    <div class="card">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
+                         <div class="card-body" style="padding: 10px;">
+                            <h3 class="card-title">Kentang Kekinian</h3>
+                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
+                            <div class="text-right">
+                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
+                         <div class="card-body" style="padding: 10px;">
+                            <h3 class="card-title">Kentang Kekinian</h3>
+                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
+                            <div class="text-right">
+                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
+                         <div class="card-body" style="padding: 10px;">
+                            <h3 class="card-title">Kentang Kekinian</h3>
+                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
+                            <div class="text-right">
+                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
+                         <div class="card-body" style="padding: 10px;">
+                            <h3 class="card-title">Kentang Kekinian</h3>
+                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
+                            <div class="text-right">
+                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="card">
+                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
+                         <div class="card-body" style="padding: 10px;">
+                            <h3 class="card-title">Kentang Kekinian</h3>
+                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
+                            <div class="text-right">
+                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
                     <div class="card">
                         <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
@@ -214,18 +250,18 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="<?php echo site_url('Beranda');?>">Beranda</a></li>
+                                    <a href="index.html">Beranda</a></li>
                                 <li>
-                                    <a href="<?php echo site_url('Pangan');?>">Pangan Lokal</a>
+                                    <a href="pangan.html">Pangan Lokal</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('Berita');?>">Berita</a>
+                                    <a href="berita.html">Berita</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('Manfaat');?>">Manfaat</a>
+                                    <a href="manfaat.html">Manfat</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('Resep');?>">Resep</a>
+                                    <a href="reserp.html">Resep</a>
                                 </li>
                             </ul>
                         </nav>
