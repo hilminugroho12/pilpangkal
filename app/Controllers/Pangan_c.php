@@ -15,9 +15,7 @@ class Pangan extends BaseController {
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataPangan'] = $this->panganModel->findAll();
 
-        echo view('header_v');
         echo view('Pangan_v', $data);
-        echo view('footer_v');
     }
 
     public function add() {
