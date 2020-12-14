@@ -14,8 +14,10 @@ class Pangan extends BaseController {
     public function index() {   
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataPangan'] = $this->panganModel->findAll();
-
+        
+        echo view('header');
         echo view('pangan_v', $data);
+        echo view('footer');
     }
 
     public function add() {        
@@ -31,7 +33,7 @@ class Pangan extends BaseController {
     public function save() {
         $data = [
             'nama_pangan' => $this->request->getPost('nama'),
-            'deskripsi' => $this->request->getPost('deskripsi'),
+            'deskripsi' => $this->request->getPost('deskripsi'),                        
             'foto' => $this->request->getPost('foto')
         ];
 

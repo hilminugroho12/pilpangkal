@@ -15,7 +15,9 @@ class Manfaat extends BaseController {
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataManfaat'] = $this->manfaatModel->findAll();
 
+        echo view('header');
         echo view('manfaat_v', $data);
+        echo view('footer');
     }
 
     public function add() {        

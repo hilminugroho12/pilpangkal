@@ -15,7 +15,9 @@ class Resep extends BaseController {
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataResep'] = $this->resepModel->findAll();
 
+        echo view('header');
         echo view('resep_v', $data);
+        echo view('footer');
     }
 
     public function add() {        

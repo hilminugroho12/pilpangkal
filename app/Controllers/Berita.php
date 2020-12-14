@@ -15,7 +15,9 @@ class Berita extends BaseController {
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataBerita'] = $this->beritaModel->findAll();
 
+        echo view('header');
         echo view('berita_v', $data);
+        echo view('footer');
     }
 
     public function add() {        

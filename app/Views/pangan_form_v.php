@@ -20,6 +20,10 @@
                     <input type="text" name="nama" class="form-control" id="exampleFormControlInput1">
                 </div>
                 <div class="form-group">
+                    <label for="exampleFormControlInput1">Kode Admin</label>
+                    <input type="text" name="kode_admin" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group">
                     <label for="exampleFormControlTextarea1">Deskripsi</label>
                     <textarea name="deskripsi" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                    
                 </div>

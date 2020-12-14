@@ -10,7 +10,9 @@ class Beranda extends BaseController
 {
     public function index()
     {    
+        echo view('header');
         echo view('beranda_v.php');        
+        echo view('footer');
     }
 }
 
