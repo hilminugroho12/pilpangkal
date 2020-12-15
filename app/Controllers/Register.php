@@ -6,11 +6,12 @@ namespace App\Controllers;
 //beranda_m = model
 
 
-class Beranda extends BaseController 
+class Register extends BaseController 
 {
     public function index()
-    {            
-        return view('beranda_v.php');                
+    {    
+        echo view('header');
+        echo view('register_v.php');        
     }
 }
 

@@ -10,9 +10,19 @@
                     <p class="description">Untuk kamu yang mau ikut meramaikan konten-konten menarik seputar pangan lokal. Yuk gabung sekarang!</p>
                 </div>
 
+                <?php 
+                if (!empty($isLogin)) 
+                {
+                ?> 
+                    <a href="<?php echo site_url('Beranda/logout')?>" class="btn btn-danger"> Logout </a>
+                <?php         
+                }
+                else{
+                ?>
                 <div class="button-get-started text-center">
-                    <a href="<?php echo site_url('login_v.php');?>" class="btn btn-danger btn-fill btn-lg">Login</a>
+                    <a href="<?php echo site_url('Login');?>" class="btn btn-danger btn-fill btn-lg">Login</a>
                 </div>
+                <?php } ?>
             </div>
         </div>
     </div>

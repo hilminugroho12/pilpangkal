@@ -52,6 +52,14 @@
                     <li>
                         <a href="<?php echo site_url('Resep'); ?>">Resep</a>
                     </li>
+                    <?php 
+                    if (!empty($isLogin)) 
+                    {
+                    ?> 
+                        <li>
+                            <a href="<?php echo site_url('Resep'); ?>">Tes</a>
+                        </li>
+                    <?php } ?>
                     <li>
                         <form class="form-inline">
                             <input class="form-control search" type="search" placeholder="Search">
