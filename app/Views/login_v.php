@@ -25,14 +25,14 @@
                   <img src="<?php echo base_url('assets/img/logo.png') ?>" alt="logo" class="logo">
                 </div>
                 <p class="login-card-description">Berbagi informasi Pangan Lokal Kita!</p>
-                <form method="POST" action="<?php echo site_url('Login/login') ?>">
+                <form method="POST" action="<?php echo site_url('Beranda/login') ?>">
                     <div class="form-group">
                       <label for="username" class="sr-only">Username</label>
-                      <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                      <input type="text" name="username" id="username" class="form-control" placeholder="Username" required>
                     </div>
                     <div class="form-group mb-4">
                       <label for="password" class="sr-only">Password</label>
-                      <input type="password" name="password" id="password" class="form-control" placeholder="***********">
+                      <input type="password" name="password" id="password" class="form-control" placeholder="***********" required>
                     </div>
                     <button type="submit" name="login" id="login" class="btn btn-block login-btn mb-4" value="Login">Login</button>
                   </form>

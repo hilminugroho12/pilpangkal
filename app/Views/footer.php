@@ -14,13 +14,15 @@
                 if (!empty($isLogin)) 
                 {
                 ?> 
-                    <a href="<?php echo site_url('Beranda/logout')?>" class="btn btn-danger"> Logout </a>
+                    <div class="button-get-started text-center">
+                        <a href="<?php echo site_url('Beranda/logout')?>" class="btn btn-danger btn-fill btn-lg"> Logout </a>
+                    </div>
                 <?php         
                 }
                 else{
                 ?>
                 <div class="button-get-started text-center">
-                    <a href="<?php echo site_url('Login');?>" class="btn btn-danger btn-fill btn-lg">Login</a>
+                    <a href="<?php echo site_url('Beranda/masuk');?>" class="btn btn-danger btn-fill btn-lg">Login</a>
                 </div>
                 <?php } ?>
             </div>
