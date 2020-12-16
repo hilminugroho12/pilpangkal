@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/login.css') ?>">
+    <link href="<?php echo base_url('assets/css/bootstrap.css');?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/gaia.css');?>" rel="stylesheet"/>
+    <link href="<?php echo base_url('assets/css/fonts/pe-icon-7-stroke.css');?>" rel="stylesheet">
     </head>
     <body>
     <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
@@ -16,7 +19,7 @@
         <div class="card login-card">
             <div class="row no-gutters">
             <div class="col-md-5">
-                <img src="img/register1.jpg" alt="login" class="login-card-img">
+                <img src="<?php echo base_url('assets/img/register1.jpg') ?>" alt="login" class="login-card-img">
             </div>
             <div class="col-md-7">
                 <div class="card-body">
@@ -24,7 +27,11 @@
                     <img src="<?php echo base_url('assets/img/logo.png') ?>" alt="logo" class="logo">
                 </div>
                 <p class="login-card-description">Ayo mulai langkah baru!</p>
-                <form action="#!">
+                <form method="POST" action="<?php echo site_url('Register/save') ?>">
+                    <div class="form-group">
+                        <label for="kede_member" class="sr-only">Kode Member</label>
+                        <input type="text" name="kode_member" id="kode_member" class="form-control" placeholder="Kode Member">
+                    </div>
                     <div class="form-group">
                         <label for="username" class="sr-only">Nama Lengkap</label>
                         <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama">
@@ -41,9 +48,9 @@
                         <label for="password" class="sr-only">Password</label>
                         <input type="password" name="password" id="password" class="form-control" placeholder="***********">
                     </div>
-                    <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Register">
+                    <button type="submit" name="register" class="btn btn-block login-btn mb-4">REGISTER</button>
                     </form>
-                    <p class="login-card-footer-text">Sudah punya akun? <a href="<?php echo site_url('Login') ?>" class="text-reset"><font color="#854d0a">Login</font></a></p>
+                    <p class="login-card-footer-text">Sudah punya akun? <a href="<?php echo site_url('Beranda/masuk') ?>" class="text-reset"><font color="#854d0a">Login</font></a></p>
                 </div>
             </div>
             </div>

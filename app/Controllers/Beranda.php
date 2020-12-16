@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\Admin_Model;
+use App\Models\Member_Model;
 //Beranda = Controller
 //beranda_v = view
 //beranda_m = model
@@ -24,12 +25,32 @@ class Beranda extends BaseController
 
     public function masuk()
     {
-        echo view('login_v');
+        return view('login_v');
     }
 
     public function login()
     { 
         $adminModel = new Admin_Model();
+        $where = [
+            'username' => $this->request->getPost('username'),
+            'password' => $this->request->getPost('password')
+        ];
+
+        $data = $adminModel->where($where)->find();
+        //var_dump($data);die;
+        if (!empty($data)) {
+            $this->session->set('username',$this->request->getPost('username'));
+            $this->session->setFlashdata('response',['status' => 1,'message' => 'Berhasil Login']);     
+        }
+        else{
+            $this->session->setFlashdata('response',['status' => 0,'message' => 'Gagal Login']);  
+        }
+        return redirect()->to(site_url('Beranda'));
+    }
+
+    public function login_m()
+    { 
+        $memberModel = new Member_Model();
         $where = [
             'username' => $this->request->getPost('username'),
             'password' => $this->request->getPost('password')

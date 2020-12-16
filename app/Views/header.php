@@ -57,7 +57,7 @@
                     {
                     ?> 
                         <li>
-                            <a href="<?php echo site_url('Resep'); ?>">Dasboard Admin</a>
+                            <a href="<?php echo site_url('Admin'); ?>">Dasboard Admin</a>
                         </li>
                     <?php } ?>
                     <li>

@@ -25,7 +25,19 @@
                   <img src="<?php echo base_url('assets/img/logo.png') ?>" alt="logo" class="logo">
                 </div>
                 <p class="login-card-description">Berbagi informasi Pangan Lokal Kita!</p>
-                <form method="POST" action="<?php echo site_url('Beranda/login') ?>">
+                <?php if(!empty($session)) { 
+                            ?>
+                            <div class="alert alert-<?php echo $session['status'] ? 'success' : 'danger'; ?> alert-dismissible fade show" role="alert">
+                                <?php echo $session['message']; ?>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            
+                        <?php 
+                        } 
+                ?>
+                <form method="POST" action="<?php echo site_url('Beranda/login')?>">
                     <div class="form-group">
                       <label for="username" class="sr-only">Username</label>
                       <input type="text" name="username" id="username" class="form-control" placeholder="Username" required>

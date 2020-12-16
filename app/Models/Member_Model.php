@@ -9,7 +9,7 @@ class Member_Model extends Model {
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['kode_member', 'username','passwprd', 'nama', 'email'];
+    protected $allowedFields = ['kode_member', 'username','password', 'nama', 'email'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
