@@ -17,7 +17,7 @@
                 <!-- /row -->
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="formPanganLokal.html"><button class="fa fa-plus btn btn-danger"> Tambah Pangan Lokal</button></a>
+                        <a href="<?php echo site_url('Pangan/add') ?>"><button class="fa fa-plus btn btn-danger"> Tambah Pangan Lokal</button></a>
                     </div>
                     <br>
                     <br>

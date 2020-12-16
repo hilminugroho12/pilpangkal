@@ -16,9 +16,6 @@
                 </div>
                 <!-- /row -->
                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="formAdmin.html"><button class="fa fa-plus btn btn-danger"> Tambah Admin</button></a>
-                    </div>
                     <br>
                     <br>
                     <div class="col-sm-12">

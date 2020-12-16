@@ -17,7 +17,7 @@
                 <!-- /row -->
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="formManfaat.html"><button class="fa fa-plus btn btn-danger"> Tambah Manfaat</button></a>
+                        <a href="<?php echo site_url('Manfaat/add') ?>"><button class="fa fa-plus btn btn-danger"> Tambah Manfaat</button></a>
                     </div>
                     <br>
                     <br>

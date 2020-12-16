@@ -17,7 +17,7 @@
                 <!-- /row -->
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="formResep.html"><button class="fa fa-plus btn btn-danger"> Tambah Resep</button></a>
+                        <a href="<?php echo site_url('Resep/add') ?>"><button class="fa fa-plus btn btn-danger"> Tambah Resep</button></a>
                     </div>
                     <br>
                     <br>

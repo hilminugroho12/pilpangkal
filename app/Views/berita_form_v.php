@@ -1,46 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords"
+            content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, severny admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, pixel  design, pixel  dashboard bootstrap 4 dashboard template">
+        <meta name="description"
+            content="Pixel Admin is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+        <meta name="robots" content="noindex,nofollow">
+        <title>Pil Pangkal</title>
+        <link rel="canonical" href="https://www.wrappixel.com/templates/pixel-admin-lite/" />
+        <!-- Favicon icon -->
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="https://wrappixel.com/demos/free-admin-templates/all-lite-landing-pages/assets/images/logos/pixel-favicon.png">
+        <!-- Bootstrap Core CSS -->
+        <link href="<?php echo base_url('assets/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet">
+        <!-- Menu CSS -->
+        <link href="<?php echo base_url('assets/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css'); ?>" rel="stylesheet">
+        <!-- toast CSS -->
+        <link href="<?php echo base_url('assets/plugins/bower_components/toast-master/css/jquery.toast.css'); ?>" rel="stylesheet">
+        <!-- morris CSS -->
+        <link href="<?php echo base_url('assets/plugins/bower_components/morrisjs/morris.css'); ?>" rel="stylesheet">
+        <!-- animation CSS -->
+        <link href="<?php echo base_url('assets/css/animate.css'); ?>" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="<?php echo base_url('assets/css/style_admin.css'); ?>" rel="stylesheet">
+        <!-- color CSS -->
+        <link href="<?php echo base_url('assets/css/colors/blue-dark.css'); ?>" id="theme" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-        <title>Form Berita Pangan Lokal</title>
-    </head>
-    <body>
-        <br> <br>
-        <h2 align="center">Form Berita Pangan Lokal</h2>
-        <div class="container">
-            <form action="<?php echo site_url('Berita/save'); ?>" method="POST">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Berita Pangan Lokal</label>
-                    <input type="text" name="judul" class="form-control" id="exampleFormControlInput1">
+<body>
+<div class="container-fluid">
+                 <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Berita</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Beranda</a></li>
+                            <li class="active">Tambah Berita</li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Deskripsi</label>
-                    <textarea name="deskripsi" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                    
+                <!-- /.row -->
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="white-box">
+                            <form class="form-horizontal form-material">
+                                <div class="form-group">
+                                    <label class="col-md-12">ID Berita</label>
+                                    <div class="col-md-12">
+                                        <input type="text"
+                                            class="form-control form-control-line"> </div>
+                                </div>
+                                <div class="form-group">
+                                   <label class="col-md-12">Judul Berita</label>
+                                    <div class="col-md-12">
+                                        <input type="text"
+                                            class="form-control form-control-line"> </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-12">Gambar</label>
+                                    <div class="col-md-12">
+                                        <input type="file"class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-12">Deskripsi</label>
+                                    <div class="col-md-12">
+                                        <textarea rows="5" class="form-control form-control-line"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-12">Author</label>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <button type="Reset" class="btn btn-danger">Reset</button>
+                                        <button class="btn btn-success">Tambah</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Upload Foto</label>
-                    <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1" name="foto">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"></footer>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+</body>
 
-        <!-- Optional JavaScript; choose one of the two! -->
-
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-        
-    </body>
 </html>
