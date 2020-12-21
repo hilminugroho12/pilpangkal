@@ -57,41 +57,41 @@
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
                         <div class="white-box">
-                            <form class="form-horizontal form-material">
+                            <form class="form-horizontal form-material" action="<?php echo site_url('Resep/save') ?>" method="POST">
                                 <div class="form-group">
-                                    <label class="col-md-12">ID Resep</label>
+                                    <label class="col-md-12">Kode Resep</label>
                                     <div class="col-md-12">
-                                        <input type="text"
-                                            class="form-control form-control-line"> </div>
+                                        <input type="text" name="kode_resep" class="form-control form-control-line"> 
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                    <label class="col-md-12">Judul Resep</label>
                                     <div class="col-md-12">
-                                        <input type="text"
-                                            class="form-control form-control-line"> </div>
+                                        <input type="text" name="judul" class="form-control form-control-line"> 
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Gambar</label>
                                     <div class="col-md-12">
-                                        <input type="file"class="form-control form-control-line">
+                                        <input type="file" class="form-control form-control-line" name="foto" >
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Deskripsi</label>
                                     <div class="col-md-12">
-                                        <textarea rows="5" class="form-control form-control-line"></textarea>
+                                        <textarea rows="5" class="form-control form-control-line" name="deskripsi"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Author</label>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control form-control-line">
+                                        <input type="text" class="form-control form-control-line" name="author">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-12">
                                         <button type="Reset" class="btn btn-danger">Reset</button>
-                                        <button class="btn btn-success">Tambah</button>
+                                        <button type="submit" class="btn btn-success">Tambah</button>
                                     </div>
                                 </div>
                             </form>

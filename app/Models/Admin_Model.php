@@ -9,7 +9,7 @@ class Admin_Model extends Model {
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['kode_admin', 'username','passwprd', 'nama', 'email'];
+    protected $allowedFields = ['kode_admin', 'username','password', 'nama', 'email'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

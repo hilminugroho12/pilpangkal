@@ -32,9 +32,14 @@ class Resep extends BaseController {
 
     public function save() {
         $data = [
+            'kode_resep' => $this->request->getPost('kode_resep'),
+            'kode_admin' => $this->request->getPost('kode_admin'),
+            'kode_member' => $this->request->getPost('kode_member'),
             'judul' => $this->request->getPost('judul'),
+            'foto' => $this->request->getPost('foto'),
+            'video' => $this->request->getPost('video'),
             'deskripsi' => $this->request->getPost('deskripsi'),
-            'foto' => $this->request->getPost('foto')
+            'author' => $this->request->getPost('author')
         ];
 
         $id = $this->request->getPost('id');

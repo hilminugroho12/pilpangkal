@@ -9,7 +9,7 @@ class Manfaat_Model extends Model {
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['kode_manfaat', 'judul','deskripsi', 'foto'];
+    protected $allowedFields = ['kode_manfaat','kode_admin', 'author', 'judul','deskripsi', 'foto'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

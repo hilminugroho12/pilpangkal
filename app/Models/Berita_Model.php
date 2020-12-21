@@ -9,7 +9,7 @@ class Berita_Model extends Model {
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['kode_berita', 'judul','deskripsi', 'foto'];
+    protected $allowedFields = ['kode_berita','kode_admin','author','kode_member', 'judul','deskripsi', 'foto'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

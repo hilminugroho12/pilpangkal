@@ -9,7 +9,7 @@ class Pangan_Model extends Model {
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['kode_pangan', 'nama_pangan','deskripsi', 'foto'];
+    protected $allowedFields = ['kode_pangan', 'kode_admin', 'author', 'nama_pangan','deskripsi', 'foto'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

@@ -22,7 +22,12 @@
                     <h2>Manfaat Pangan Lokal Indonesia</h2>
                     <div class="separator separator-danger">✻</div>
                     <p class="description">Mari menjelajah berbagai manfaat hasil bumi Indonesia!</p>
-                    <a href="<?php echo site_url('Manfaat/add');?>" type="btn btn-primary">Upload Manfaat Pangan Lokal</a>
+                    <?php 
+                    if (!empty($isLogin)) 
+                    {
+                    ?> 
+                        <a href="<?php echo site_url('Manfaat/add');?>" type="btn btn-primary">Upload Manfaat Pangan Lokal</a>
+                    <?php } ?>
                 </div>
             </div>
             <div class="row">

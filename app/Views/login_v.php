@@ -47,7 +47,7 @@
                       <input type="password" name="password" id="password" class="form-control" placeholder="***********" required>
                     </div>
                     <button type="submit" name="login" id="login" class="btn btn-block login-btn mb-4" value="Login">Login</button>
-                  </form>
+                </form>
                   <br>
                   <p class="login-card-footer-text">Belum punya akun? <a href="<?php echo site_url('Register') ?>" class="text-reset"><font color="#854d0a">Register</font></a></p>
               </div>

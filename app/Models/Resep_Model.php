@@ -9,7 +9,7 @@ class Resep_Model extends Model {
     protected $returnType     = 'object';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['kode_resep', 'judul','deskripsi', 'foto'];
+    protected $allowedFields = ['kode_resep', 'kode_admin', 'kode_member', 'author', 'video', 'judul','deskripsi', 'foto'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
