@@ -1,3 +1,4 @@
+<?php include 'header.php' ?>        
     <div class="section section-small section-get-started">
         <div class="parallax filter">
             <div class="image"
@@ -22,7 +23,12 @@
                     <h2>Berita Pangan Lokal Kita!</h2>
                     <div class="separator separator-danger">✻</div>
                     <p class="description">Berita terkini pangan lokal yang bisa diikuti setiap harinya!</p>
-                    <a href="<?php echo site_url('Berita/add');?>" type="btn btn-primary">Upload Berita Pangan Lokal</a>
+                    <?php 
+                    if (!empty($isLogin)) 
+                    {
+                    ?> 
+                        <a href="<?php echo site_url('Berita/add');?>" type="btn btn-primary">Upload Berita Pangan Lokal</a>
+                    <?php }?>
                 </div>
             </div>
             <div class="row">
@@ -154,3 +160,4 @@
             </div>
         </div>
     </div>
+<?php include 'header.php' ?>    

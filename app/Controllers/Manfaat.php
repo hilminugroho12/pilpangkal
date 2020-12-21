@@ -14,10 +14,9 @@ class Manfaat extends BaseController {
     public function index() {   
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataManfaat'] = $this->manfaatModel->findAll();
+        $data['isLogin'] = $this->session->get('username');
 
-        echo view('header');
         echo view('manfaat_v', $data);
-        echo view('footer');
     }
 
     public function add() {        
@@ -32,7 +31,10 @@ class Manfaat extends BaseController {
 
     public function save() {
         $data = [
+            'kode_manfaat' => $this->request->getPost('kode_manfaat'),
+            'kode_admin' => $this->request->getPost('kode_admin'),
             'judul' => $this->request->getPost('judul'),
+            'author' => $this->request->getPost('author'),
             'deskripsi' => $this->request->getPost('deskripsi'),
             'foto' => $this->request->getPost('foto')
         ];

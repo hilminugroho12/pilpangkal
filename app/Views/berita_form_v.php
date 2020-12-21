@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
-                            <li><a href="index.html">Beranda</a></li>
+                            <li><a href="<?php echo site_url('Beranda') ?>">Beranda</a></li>
                             <li class="active">Tambah Berita</li>
                         </ol>
                     </div>
@@ -56,41 +56,39 @@
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
                         <div class="white-box">
-                            <form class="form-horizontal form-material">
+                            <form class="form-horizontal form-material" action="<?php echo site_url('Berita/save') ?>" method="POST">
                                 <div class="form-group">
-                                    <label class="col-md-12">ID Berita</label>
+                                    <label class="col-md-12">Kode Berita</label>
                                     <div class="col-md-12">
-                                        <input type="text"
-                                            class="form-control form-control-line"> </div>
+                                        <input type="text" name="kode_berita" class="form-control form-control-line"> </div>
                                 </div>
                                 <div class="form-group">
                                    <label class="col-md-12">Judul Berita</label>
                                     <div class="col-md-12">
-                                        <input type="text"
-                                            class="form-control form-control-line"> </div>
+                                        <input type="text" name="judul" class="form-control form-control-line"> </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Gambar</label>
                                     <div class="col-md-12">
-                                        <input type="file"class="form-control form-control-line">
+                                        <input type="file" name="foto" class="form-control form-control-line">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Deskripsi</label>
                                     <div class="col-md-12">
-                                        <textarea rows="5" class="form-control form-control-line"></textarea>
+                                        <textarea rows="5" name="deskripsi" class="form-control form-control-line"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Author</label>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control form-control-line">
+                                        <input type="text" name="author" class="form-control form-control-line">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-12">
                                         <button type="Reset" class="btn btn-danger">Reset</button>
-                                        <button class="btn btn-success">Tambah</button>
+                                        <button type="submit" class="btn btn-success">Tambah</button>
                                     </div>
                                 </div>
                             </form>

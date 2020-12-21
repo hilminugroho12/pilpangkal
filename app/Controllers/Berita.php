@@ -14,10 +14,9 @@ class Berita extends BaseController {
     public function index() {   
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataBerita'] = $this->beritaModel->findAll();
+        $data['isLogin'] = $this->session->get('username');
 
-        echo view('header');
         echo view('berita_v', $data);
-        echo view('footer');
     }
 
     public function add() {        
@@ -32,6 +31,10 @@ class Berita extends BaseController {
 
     public function save() {
         $data = [
+            'kode_admin' => $this->request->getPost('kode_admin'),
+            'kode_berita' => $this->request->getPost('kode_berita'),
+            'kode_member' => $this->request->getPost('kode_member'),
+            'author' => $this->request->getPost('author'),
             'judul' => $this->request->getPost('judul'),
             'deskripsi' => $this->request->getPost('deskripsi'),
             'foto' => $this->request->getPost('foto')

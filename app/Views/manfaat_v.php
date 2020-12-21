@@ -1,3 +1,4 @@
+<?php include 'header.php' ?>    
     <div class="section section-small section-get-started">
         <div class="parallax filter">
             <div class="image"
@@ -159,3 +160,4 @@
             </div>
         </div>
     </div>
+    <?php include 'footer.php' ?>    
