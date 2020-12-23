@@ -40,7 +40,7 @@
                 <?php foreach($dataBerita as $row): ?>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita1.jpg');?>" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/'.$row->foto);?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title"><?php echo $row->judul ?></h3>
                             <p class="card-text"><?php echo $row->deskripsi ?></p>
@@ -73,7 +73,7 @@
                         <?php foreach($dataManfaat as $row): ?>
                         <div class="col-md-4">
                             <div class="card">
-                                <img src="<?php echo base_url('assets/img/berita1.jpg'); ?>" class="card-img-top" alt="aaaa">
+                                <img src="<?php echo base_url('assets/img/'.$row->foto); ?>" class="card-img-top" alt="aaaa">
                                 <div class="card-body" style="padding: 10px;">
                                     <h3 class="card-title">Trend sarapan sehat</h3>
                                     <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
@@ -103,7 +103,7 @@
                 <?php foreach($dataResep as $row): ?>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita1.jpg'); ?>" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/'.$row->foto); ?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title"><?php echo $row->judul ?></h3>
                             <p class="card-text"><?php echo $row->deskripsi ?></p>

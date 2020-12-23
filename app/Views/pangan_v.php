@@ -36,7 +36,7 @@
                 <?php foreach ($dataPangan as $row): ?>
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="<?php echo base_url('assets/img/".$row->foto."');?>" class="card-img-top" alt="aaaa">
+                        <img src="<?php echo base_url('assets/img/'.$row->foto);?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title"><?php echo $row->nama_pangan; ?></h3>
                             <p class="card-text"><?php echo $row->deskripsi;?></p>

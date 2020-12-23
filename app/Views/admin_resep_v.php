@@ -44,7 +44,7 @@
                                             <td></td>
                                             <td><?php echo $row->kode_resep ?></td>
                                             <td><?php echo $row->judul ?></td>
-                                            <td><?php echo $row->foto ?></td>
+                                            <td><img src="<?php echo base_url('assets/img/'.$row->foto) ?>" alt="" style="width:100px; height:100px;"></td>
                                             <td><?php echo $row->video ?></td>
                                             <td><?php echo $row->deskripsi ?></td>
                                             <td><?php echo $row->author ?></td>

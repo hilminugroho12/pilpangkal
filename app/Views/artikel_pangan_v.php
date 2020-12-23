@@ -26,9 +26,6 @@
                         <a href="#" class="btn btn-social btn-facebook btn-simple">
                             <i class="fa fa-pencil"></i> Author
                         </a>
-                        <a href="#" class="btn btn-social btn-dribbble btn-simple">
-                            <i class="fa fa-calendar"></i> Tanggal
-                        </a>
                     </p>
                 </div>
             </div>

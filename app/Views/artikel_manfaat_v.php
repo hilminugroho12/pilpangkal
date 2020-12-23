@@ -26,14 +26,6 @@
                         <a href="#" class="btn btn-social btn-facebook btn-simple">
                             <i class="fa fa-pencil"></i> Author
                         </a>
-                        <a href="#" class="btn btn-social btn-dribbble btn-simple">
-                            <i class="fa fa-calendar"></i> Tanggal
-                        </a>
-                         <a href="#" class="btn btn-social btn-dribbble btn-simple">
-                            <i class="fa fa-heart"></i> Suka
-                        </a>
-                        <a href="#" class="btn btn-social btn-twitter btn-simple">
-                            <i class="fa fa-share"></i> Berbagi
                         </a>
                     </p>
                 </div>

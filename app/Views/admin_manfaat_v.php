@@ -43,12 +43,12 @@
                                             <td></td>
                                             <td><?php echo $row->kode_manfaat ?></td>
                                             <td><?php echo $row->judul ?></td>
-                                            <td><?php echo $row->foto ?></td>
+                                            <td><img src="<?php echo base_url('assets/img/'.$row->foto) ?>" alt="" style="width:100px; height:100px;"></td>
                                             <td><?php echo $row->deskripsi ?></td>
                                             <td><?php echo $row->author ?></td>
                                             <td>
                                                 <a href="editManfaat.html"><button class="fa fa-edit btn btn-success"></button>
-                                                <button class="fa fa-trash-o btn btn-danger"></button>
+                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Manfaat/delete/'.$row->kode_manfaat); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach ?>
