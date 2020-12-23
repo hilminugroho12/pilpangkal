@@ -2,45 +2,34 @@
 namespace App\Controllers;
 
 use App\Models\Admin_Model;
+use App\Models\Member_Model;
+use App\Models\Pangan_Model;
+use App\Models\Berita_Model;
+use App\Models\Manfaat_Model;
+use App\Models\Resep_Model;
 
 class Admin extends BaseController {
 
     public function __construct() {
         $this->session = \Config\Services::session();
-
         $this->adminModel = new Admin_Model();
+        $this->memberModel = new Member_Model();
+        $this->panganModel = new Pangan_Model();
+        $this->beritaModel = new Berita_Model();
+        $this->manfaatModel = new Manfaat_Model();
+        $this->resepModel = new Resep_Model();
     }
 
     public function index() {   
         $data['session'] = $this->session->getFlashdata('response');
         $data['dataAdmin'] = $this->adminModel->findAll();
+        $data['dataMember'] = $this->memberModel->findAll();
+        $data['dataPangan'] = $this->panganModel->findAll();
+        $data['dataBerita'] = $this->beritaModel->findAll();
+        $data['dataManfaat'] = $this->manfaatModel->findAll();
+        $data['dataResep'] = $this->resepModel->findAll();
 
         echo view('admin_v', $data);        
-    }
-
-    public function member()
-    {
-        echo view('admin_member_v');
-    }
-
-    public function pangan()
-    {
-        echo view('admin_pangan_v');
-    }
-
-    public function berita()
-    {
-        echo view('admin_berita_v');
-    }
-
-    public function resep()
-    {
-        echo view('admin_resep_v');
-    }
-
-    public function manfaat()
-    {
-        echo view('admin_manfaat_v');
     }
 
     public function add() {        

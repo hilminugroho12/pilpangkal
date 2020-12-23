@@ -69,23 +69,23 @@
                                     aria-hidden="true"></i><span class="hide-menu">Admin</span></a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('Admin/member'); ?>" class="waves-effect"><i class="fa fa-users fa-fw"
+                            <a href="<?php echo site_url('Admin_Member'); ?>" class="waves-effect"><i class="fa fa-users fa-fw"
                                     aria-hidden="true"></i><span class="hide-menu">Member</span></a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('Admin/pangan'); ?>" class="waves-effect"><i class="fa fa-star fa-fw"
+                            <a href="<?php echo site_url('Admin_Pangan'); ?>" class="waves-effect"><i class="fa fa-star fa-fw"
                                     aria-hidden="true"></i><span class="hide-menu">Pangan Lokal</span></a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('Admin/berita'); ?>" class="waves-effect"><i class="fa fa-bullhorn fa-fw"
+                            <a href="<?php echo site_url('Admin_Berita'); ?>" class="waves-effect"><i class="fa fa-bullhorn fa-fw"
                                     aria-hidden="true"></i><span class="hide-menu">Berita</span></a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('Admin/manfaat'); ?>" class="waves-effect"><i class="fa fa-check-circle-o fa-fw"
+                            <a href="<?php echo site_url('Admin_Manfaat'); ?>" class="waves-effect"><i class="fa fa-check-circle-o fa-fw"
                                     aria-hidden="true"></i><span class="hide-menu">Manfaat</span></a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('Admin/resep'); ?>" class="waves-effect"><i class="fa fa-cutlery fa-fw"
+                            <a href="<?php echo site_url('Admin_Resep'); ?>" class="waves-effect"><i class="fa fa-cutlery fa-fw"
                                     aria-hidden="true"></i><span class="hide-menu">Resep</span></a>
                         </li>
                     </ul>

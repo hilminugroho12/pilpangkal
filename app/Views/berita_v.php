@@ -32,115 +32,23 @@
                 </div>
             </div>
             <div class="row">
+                <?php foreach($dataBerita as $row): ?>
                 <div class="col-md-4">
                     <div class="card">
                         <img src="<?php echo base_url('assets/img/berita1.jpg');?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Trend sarapan sehat</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
+                            <h3 class="card-title"><?php echo $row->judul ?></h3>
+                            <p class="card-text"><?php echo $row->deskripsi ?></p>
                             <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                                <a href="<?php echo site_url('Artikel_Berita') ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita2.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Jagung terus menjadi pilihan</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang Kekinian</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang Kekinian</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang Kekinian</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang Kekinian</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang Kekinian</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang Kekinian</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-4">
-                    <div class="card">
-                        <img src="<?php echo base_url('assets/img/berita3.jpg');?>" class="card-img-top" alt="aaaa">
-                         <div class="card-body" style="padding: 10px;">
-                            <h3 class="card-title">Kentang Kekinian</h3>
-                            <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
-                            <div class="text-right">
-                                <a href=""><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <nav aria-label="Page navigation example">
+                <?php endforeach; ?>
+            </div>
+            
+            <nav aria-label="Page navigation example">
                   <ul class="pagination">
                     <li class="page-item">
                       <a class="page-link" href="#" aria-label="Previous">
@@ -157,7 +65,6 @@
                     </li>
                   </ul>
                 </nav>
-            </div>
         </div>
     </div>
-<?php include 'header.php' ?>    
+<?php include 'footer.php' ?>    

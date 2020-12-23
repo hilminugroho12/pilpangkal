@@ -35,18 +35,20 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach($dataAdmin as $row): ?>
                                         <tr>
-                                            <td>1</td>
-                                            <td>AD01</td>
-                                            <td>Defa Daniah</td>
-                                            <td>defadaniah94@gmail.com</td>
-                                            <td>defa_daniah</td>
-                                            <td>nanti coba pake hash</td>
+                                            <td></td>
+                                            <td><?php echo $row->kode_admin ?></td>
+                                            <td><?php echo $row->nama ?></td>
+                                            <td><?php echo $row->email ?></td>
+                                            <td><?php echo $row->username ?></td>
+                                            <td><?php echo $row->password ?></td>
                                             <td>
                                                 <a href="editAdmin.html"><button class="fa fa-edit btn btn-success"></button></a>
                                                 <button class="fa fa-trash-o btn btn-danger"></button>
                                             </td>
                                         </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>

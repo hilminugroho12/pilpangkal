@@ -38,18 +38,20 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>PL01</td>
-                                            <td>Kentang</td>
-                                            <td>.jpg</td>
-                                            <td>harus panjang harus panjang </td>
-                                            <td>Admin 1</td>
+                                        <?php foreach($dataPangan as $row): ?>:
+                                        <tr>                                            
+                                            <td></td>
+                                            <td><?php echo $row->kode_pangan ?></td>
+                                            <td><?php echo $row->nama_pangan ?></td>
+                                            <td><?php echo $row->foto ?></td>
+                                            <td><?php echo $row->deskripsi ?></td>
+                                            <td><?php echo $row->author ?></td>
                                             <td>
                                                 <a href="editPanganLokal.html"><button class="fa fa-edit btn btn-success"></button></a>
                                                 <button class="fa fa-trash-o btn btn-danger"></button>
                                             </td>
                                         </tr>
+                                        <?php endforeach ?>
                                     </tbody>
                                 </table>
                             </div>

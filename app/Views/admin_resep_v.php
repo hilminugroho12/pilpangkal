@@ -39,19 +39,21 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach($dataResep as $row): ?>
                                         <tr>
-                                            <td>1</td>
-                                            <td>RS01</td>
-                                            <td>Kentang Kurcaci</td>
-                                            <td>.jpg</td>
-                                            <td>.mp4</td>
-                                            <td>harus panjang harus panjang </td>
-                                            <td>Member 1</td>
+                                            <td></td>
+                                            <td><?php echo $row->kode_resep ?></td>
+                                            <td><?php echo $row->judul ?></td>
+                                            <td><?php echo $row->foto ?></td>
+                                            <td><?php echo $row->video ?></td>
+                                            <td><?php echo $row->deskripsi ?></td>
+                                            <td><?php echo $row->author ?></td>
                                             <td>
                                                 <a href="editResep.html"><button class="fa fa-edit btn btn-success"></button>
                                                 <button class="fa fa-trash-o btn btn-danger"></button>
                                             </td>
                                         </tr>
+                                        <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>
