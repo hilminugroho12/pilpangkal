@@ -15,4 +15,11 @@ class Artikel_Resep extends BaseController {
 
         echo view('artikel_resep_v', $data);        
     }
+
+    public function tampil($id)
+    {
+        $data['dataResep'] = $this->resepModel->find($id);
+        
+        echo view('artikel_resep_v', $data);        
+    }
 }

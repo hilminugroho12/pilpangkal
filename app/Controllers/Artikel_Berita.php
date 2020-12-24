@@ -15,4 +15,11 @@ class Artikel_Berita extends BaseController {
 
         echo view('artikel_berita_v', $data);        
     }
+
+    public function tampil($id)
+    {
+        $data['dataBerita'] = $this->beritaModel->find($id);
+        
+        echo view('artikel_berita_v', $data);        
+    }
 }

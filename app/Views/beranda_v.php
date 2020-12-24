@@ -45,7 +45,7 @@
                             <h3 class="card-title"><?php echo $row->judul ?></h3>
                             <p class="card-text"><?php echo $row->deskripsi ?></p>
                             <div class="text-right">
-                                <a href="<?php echo site_url('Artikel_Berita') ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                                <a href="<?php echo site_url('Artikel_Berita/tampil/'.$row->kode_berita) ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                     <h3 class="card-title">Trend sarapan sehat</h3>
                                     <p class="card-text">Bubur dan kopi telah menjadi menu sarapan yang disukai banyak orang di dunia. Menikmati bubur sambil didampingi dengan secangkir kopi panas bisa jadi menu yang sempurna sebelum memulai aktivitas seharian.</p>
                                     <div class="text-right">
-                                        <a href="<?php echo site_url('Artikel_Manfaat') ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                                        <a href="<?php echo site_url('Artikel_Manfaat/tampil/'.$row->kode_manfaat) ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@
                             <h3 class="card-title"><?php echo $row->judul ?></h3>
                             <p class="card-text"><?php echo $row->deskripsi ?></p>
                             <div class="text-right">
-                                <a href="<?php echo site_url('Artikel_Resep') ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
+                                <a href="<?php echo site_url('Artikel_Resep/tampil/'.$row->kode_resep) ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
                             </div>
                         </div>
                     </div>

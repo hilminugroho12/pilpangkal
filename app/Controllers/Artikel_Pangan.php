@@ -15,4 +15,11 @@ class Artikel_Pangan extends BaseController {
 
         echo view('artikel_pangan_v', $data);        
     }
+
+    public function tampil($id)
+    {
+        $data['dataPangan'] = $this->panganModel->find($id);
+        
+        echo view('artikel_pangan_v', $data);        
+    }
 }

@@ -15,4 +15,11 @@ class Artikel_Manfaat extends BaseController {
 
         echo view('artikel_manfaat_v', $data);        
     }
+
+    public function tampil($id)
+    {
+        $data['dataManfaat'] = $this->manfaatModel->find($id);
+        
+        echo view('artikel_manfaat_v', $data);        
+    }
 }
