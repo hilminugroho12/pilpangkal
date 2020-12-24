@@ -1,5 +1,6 @@
 <?php
 namespace App\Controllers;
+
 use App\Models\Berita_Model;
 
 class Artikel_Berita extends BaseController {
@@ -11,6 +12,7 @@ class Artikel_Berita extends BaseController {
 
     public function index() {   
         $data['session'] = $this->session->getFlashdata('response');
+        $data['isLogin'] = $this->session->get('username');
         $data['dataBerita'] = $this->beritaModel->findAll();
 
         echo view('artikel_berita_v', $data);        

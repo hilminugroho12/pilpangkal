@@ -38,7 +38,7 @@
                         <img src="<?php echo base_url('assets/img/'.$row->foto);?>" class="card-img-top" alt="aaaa">
                          <div class="card-body" style="padding: 10px;">
                             <h3 class="card-title"><?php echo $row->judul; ?></h3>
-                            <p class="card-text"><?php echo $row->deskripsi; ?></p>
+                            <p class="card-text" style="white-space: nowrap; width: 300px; overflow: hidden; text-overflow: ellipsis;"><?php echo $row->deskripsi; ?></p>
                             <div class="text-right">
                                 <a href="<?php echo site_url('Artikel_Resep/tampil/'.$row->kode_resep) ?>"><button class="btn btn-danger btn-fill">Selengkapnya</button></a>
                             </div>
