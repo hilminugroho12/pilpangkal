@@ -47,7 +47,7 @@
                                             <td><?php echo $row->deskripsi ?></td>
                                             <td><?php echo $row->author ?></td>
                                             <td>
-                                                <a href="editManfaat.html"><button class="fa fa-edit btn btn-success"></button>
+                                                <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Manfaat/edit/'.$row->kode_manfaat) ?>" ></a>
                                                 <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Manfaat/delete/'.$row->kode_manfaat); ?>"></a>
                                             </td>
                                         </tr>

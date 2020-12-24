@@ -49,8 +49,8 @@
                                             <td><?php echo $row->deskripsi ?></td>
                                             <td><?php echo $row->author ?></td>
                                             <td>
-                                                <a href="editResep.html"><button class="fa fa-edit btn btn-success"></button>
-                                                <button class="fa fa-trash-o btn btn-danger"></button>
+                                                <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Resep/edit/'.$row->kode_resep) ?>" ></a>
+                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Resep/delete/'.$row->kode_resep); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach; ?>

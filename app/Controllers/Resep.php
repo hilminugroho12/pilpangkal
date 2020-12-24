@@ -74,7 +74,7 @@ class Resep extends BaseController {
             $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
         }
 
-        return redirect()->to(site_url('Resep'));
+        return redirect()->to(site_url('Admin_Resep'));
     }
 
 }

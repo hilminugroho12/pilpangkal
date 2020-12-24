@@ -42,7 +42,8 @@
                                             <td><?php echo $row->username ?></td>
                                             <td><?php echo $row->password ?></td>
                                             <td>
-                                                <button class="fa fa-trash-o btn btn-danger"></button>
+                                                <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Register/edit/'.$row->kode_member) ?>" ></a>
+                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Register/delete/'.$row->kode_member); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach ?>

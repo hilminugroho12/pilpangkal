@@ -61,31 +61,31 @@
                                 <div class="form-group">
                                     <label class="col-md-12">Kode Resep</label>
                                     <div class="col-md-12">
-                                        <input type="text" name="kode_resep" class="form-control form-control-line"> 
+                                        <input type="text" name="kode_resep" class="form-control form-control-line" value="<?php if (!empty($dataResep)) echo $dataResep->kode_resep; ?>"> 
                                     </div>
                                 </div>
                                 <div class="form-group">
                                    <label class="col-md-12">Judul Resep</label>
                                     <div class="col-md-12">
-                                        <input type="text" name="judul" class="form-control form-control-line"> 
+                                        <input type="text" name="judul" class="form-control form-control-line" value="<?php if (!empty($dataResep)) echo $dataResep->judul; ?>"> 
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Gambar</label>
                                     <div class="col-md-12">
-                                        <input type="file" class="form-control form-control-line" name="foto" >
+                                        <input type="file" class="form-control form-control-line" name="foto" value="<?php if (!empty($dataResep)) echo $dataResep->foto; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Deskripsi</label>
                                     <div class="col-md-12">
-                                        <textarea rows="5" class="form-control form-control-line" name="deskripsi"></textarea>
+                                        <textarea rows="5" class="form-control form-control-line" name="deskripsi" value="<?php if (!empty($dataResep)) echo $dataResep->deskripsi; ?>"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Author</label>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control form-control-line" name="author">
+                                        <input type="text" class="form-control form-control-line" name="author" value="<?php if (!empty($dataResep)) echo $dataResep->resep; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">

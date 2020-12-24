@@ -47,8 +47,8 @@
                                             <td><?php echo $row->deskripsi ?></td>
                                             <td><?php echo $row->author ?></td>
                                             <td>
-                                                <a href="editPanganLokal.html"><button class="fa fa-edit btn btn-success"></button></a>
-                                                <button class="fa fa-trash-o btn btn-danger"></button>
+                                                <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Pangan/edit/'.$row->kode_pangan) ?>" ></a>
+                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Pangan/delete/'.$row->kode_pangan); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach ?>

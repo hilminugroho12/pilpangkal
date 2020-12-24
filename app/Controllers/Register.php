@@ -21,8 +21,7 @@ class Register extends BaseController {
     public function edit($id) {
         $data['dataMember'] = $this->memberModel->find($id);
         
-        echo view('header_v');
-        echo view('register_v', $data);        
+        echo view('register_form_v', $data);        
     }
 
     public function save() {
@@ -69,7 +68,7 @@ class Register extends BaseController {
             $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
         }
 
-        return redirect()->to(site_url('Beranda/login'));
+        return redirect()->to(site_url('Admin_Member'));
     }
 
 }

@@ -73,7 +73,7 @@ class Pangan extends BaseController {
             $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
         }
 
-        return redirect()->to(site_url('Pangan'));
+        return redirect()->to(site_url('Admin_Pangan'));
     }
 
 }

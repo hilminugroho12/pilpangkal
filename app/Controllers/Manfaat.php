@@ -73,7 +73,7 @@ class Manfaat extends BaseController {
             $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
         }
 
-        return redirect()->to(site_url('Manfaat'));
+        return redirect()->to(site_url('Admin_Manfaat'));
     }
 
 }

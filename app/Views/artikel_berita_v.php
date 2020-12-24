@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="title-area">
-                    <h2>Tren Sarapan Sehat</h2>
+                    <h2><?php echo $dataBerita->judul; ?></h2>
                     <div class="separator separator-danger">✻</div>
                     <p>
                         <a href="#" class="btn btn-social btn-facebook btn-simple">

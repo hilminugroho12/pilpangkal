@@ -74,7 +74,7 @@ class Berita extends BaseController {
             $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
         }
 
-        return redirect()->to(site_url('Berita'));
+        return redirect()->to(site_url('Admin_Berita'));
     }
 
 }

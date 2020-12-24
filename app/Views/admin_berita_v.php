@@ -47,8 +47,8 @@
                                             <td><?php echo $row->deskripsi ?></td>
                                             <td><?php echo $row->author ?></td>
                                             <td>
-                                                <a href="editBerita.html"><button class="fa fa-edit btn btn-success"></button></a>
-                                                <button class="fa fa-trash-o btn btn-danger"></button>
+                                                <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Berita/edit/'.$row->kode_berita) ?>" ></a>
+                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Berita/delete/'.$row->kode_berita); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach ?>
