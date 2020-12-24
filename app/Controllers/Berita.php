@@ -24,7 +24,7 @@ class Berita extends BaseController {
     }
 
     public function edit($id) {
-        $data['dataBertia'] = $this->beritaModel->find($id);
+        $data['dataBerita'] = $this->beritaModel->find($id);
         
         echo view('berita_form_v', $data);        
     }

@@ -62,6 +62,7 @@
                                     <label class="col-md-12">Kode Resep</label>
                                     <div class="col-md-12">
                                         <input type="text" name="kode_resep" class="form-control form-control-line" value="<?php if (!empty($dataResep)) echo $dataResep->kode_resep; ?>"> 
+                                        <input type="hidden" id="id" name="id" value="<?php if (!empty($dataResep)) echo $dataResep->kode_resep; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -85,7 +86,7 @@
                                 <div class="form-group">
                                     <label class="col-md-12">Author</label>
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control form-control-line" name="author" value="<?php if (!empty($dataResep)) echo $dataResep->resep; ?>">
+                                        <input type="text" class="form-control form-control-line" name="author" value="<?php if (!empty($dataResep)) echo $dataResep->author; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">

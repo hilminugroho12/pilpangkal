@@ -60,29 +60,30 @@
                                 <div class="form-group">
                                     <label class="col-md-12">Kode Pangan Lokal</label>
                                     <div class="col-md-12">
-                                        <input type="text" name="kode_pangan" class="form-control form-control-line"> </div>
+                                        <input type="text" name="kode_pangan" class="form-control form-control-line" value="<?php if (!empty($dataPangan)) echo $dataPangan->kode_pangan; ?>"> </div>
+                                        <input type="hidden" id="id" name="id" value="<?php if (!empty($dataPangan)) echo $dataPangan->kode_pangan; ?>">
                                 </div>
                                 <div class="form-group">
                                    <label class="col-md-12">Nama Pangan Lokal</label>
                                     <div class="col-md-12">
-                                        <input type="text" name="nama_pangan" class="form-control form-control-line"> </div>
+                                        <input type="text" name="nama_pangan" class="form-control form-control-line" value="<?php if (!empty($dataPangan)) echo $dataPangan->nama_pangan; ?>"> </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Gambar</label>
                                     <div class="col-md-12">
-                                        <input type="file" name="foto" class="form-control form-control-line">
+                                        <input type="file" name="foto" class="form-control form-control-line" value="<?php if (!empty($dataPangan)) echo $dataPangan->foto; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Deskripsi</label>
                                     <div class="col-md-12">
-                                        <textarea rows="5" name="deskripsi" class="form-control form-control-line"></textarea>
+                                        <textarea rows="5" name="deskripsi" class="form-control form-control-line" value="<?php if (!empty($dataPangan)) echo $dataPangan->deskripsi; ?>"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-md-12">Author</label>
                                     <div class="col-md-12">
-                                        <input type="text" name="author" class="form-control form-control-line">
+                                        <input type="text" name="author" class="form-control form-control-line" value="<?php if (!empty($dataPangan)) echo $dataPangan->author; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">

@@ -23,7 +23,7 @@ class Resep extends BaseController {
     }
 
     public function edit($id) {
-        $data['dataBertia'] = $this->resepModel->find($id);
+        $data['dataResep'] = $this->resepModel->find($id);
         
         echo view('resep_form_v', $data);        
     }
