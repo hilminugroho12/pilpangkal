@@ -30,19 +30,20 @@
                 <form method="POST" action="<?php echo site_url('Register/save') ?>">
                     <div class="form-group">
                         <label for="kede_member" class="sr-only">Kode Member</label>
-                        <input type="text" name="kode_member" id="kode_member" class="form-control" placeholder="Kode Member">
+                        <input type="text" name="kode_member" id="kode_member" class="form-control" placeholder="Kode Member" value="<?php if (!empty($dataMember)) echo $dataMember->kode_member; ?>">
+                        <input type="hidden" id="id" name="id" value="<?php if (!empty($dataMember)) echo $dataMember->kode_member; ?>">
                     </div>
                     <div class="form-group">
                         <label for="username" class="sr-only">Nama Lengkap</label>
-                        <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama">
+                        <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama" value="<?php if (!empty($dataMember)) echo $dataMember->nama; ?>">
                     </div>
                     <div class="form-group">
                         <label for="username" class="sr-only">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email" value="<?php if (!empty($dataMember)) echo $dataMember->email; ?>">
                     </div>
                     <div class="form-group">
                         <label for="username" class="sr-only">Username</label>
-                        <input type="text" name="username" id="username" class="form-control" placeholder="Username">
+                        <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="<?php if (!empty($dataMember)) echo $dataMember->username; ?>">
                     </div>
                     <div class="form-group mb-4">
                         <label for="password" class="sr-only">Password</label>

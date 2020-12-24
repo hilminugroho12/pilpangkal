@@ -60,11 +60,6 @@
                             <a href="<?php echo site_url('Admin'); ?>">Dasboard Admin</a>
                         </li>
                     <?php } ?>
-                    <li>
-                        <form class="form-inline">
-                            <input class="form-control search" type="search" placeholder="Search">
-                        </form>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

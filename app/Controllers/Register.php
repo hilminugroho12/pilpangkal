@@ -21,7 +21,7 @@ class Register extends BaseController {
     public function edit($id) {
         $data['dataMember'] = $this->memberModel->find($id);
         
-        echo view('register_form_v', $data);        
+        echo view('register_v', $data);        
     }
 
     public function save() {

@@ -57,22 +57,19 @@
                 </div>
                 <div class="col-md-4">
                     <div class="info">
-                        <h5 class="title"> Pilih Pangan Lokal</h5>
+                        <h5 class="title">Kelompok 3 P2</h5>
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">Kentang</a></li>
+                                    <a href="">Hilmi Nugroho J3C118154</a></li>
                                 <li>
-                                    <a href="#">Ubi</a>
+                                    <a href="">Defa Daniah J3C118139</a>
                                 </li>
                                 <li>
-                                    <a href="#">Singkong</a>
+                                    <a href="">Cika Mielenie A J3C218195</a>
                                 </li>
                                 <li>
-                                    <a href="#">Pisang</a>
-                                </li>
-                                <li>
-                                    <a href="#">Sagu</a>
+                                    <a href="">Dimas Eka Putra J3C118083</a>
                                 </li>
                             </ul>
                         </nav>
@@ -80,13 +77,19 @@
                 </div>
                 <div class="col-md-4">
                     <div class="info">
-                        <h5 class="title">Ingin tau?</h5>
+                    <h5 class="title"></h5>   <br>                     
                         <nav>
                             <ul>
                                 <li>
-                                    <form class="form-inline">
-                                        <input class="form-control search2" type="search" placeholder="Search">
-                                    </form>
+                                    <a href="">Egie Hendyana P J3C218174</a>
+                                </li>
+                                <li>
+                                    <a href="">Danny Thorqurrohman J3C118130</a></li>
+                                <li>
+                                    <a href="">Haidar Rasyid A M J3C118075</a>
+                                </li>
+                                <li>
+                                    <a href="">Kaisar Renaissanc Al-Ars J3C118088</a>
                                 </li>
                             </ul>
                         </nav>
