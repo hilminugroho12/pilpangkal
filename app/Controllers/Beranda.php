@@ -41,7 +41,7 @@ class Beranda extends BaseController
         $adminModel = new Admin_Model();
         $where = [
             'username' => $this->request->getPost('username'),
-            'password' => $this->request->getPost('password')
+            'password' => md5($this->request->getPost('password'))
         ];
 
         $data = $adminModel->where($where)->find();

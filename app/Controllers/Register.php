@@ -28,7 +28,7 @@ class Register extends BaseController {
         $data = [
             'kode_member' => $this->request->getPost('kode_member'),
             'username' => $this->request->getPost('username'),
-            'password' => $this->request->getPost('password'),
+            'password' => md5($this->request->getPost('password')),
             'nama' => $this->request->getPost('nama'),
             'email' => $this->request->getPost('email')
         ];
