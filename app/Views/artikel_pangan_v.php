@@ -37,13 +37,11 @@
                     </div> 
                 </div>
                 <div class="col-md-3">
-                    <?php foreach($dataPangan as $row): ?>
                     <img src="<?php echo base_url('assets/img/'.$dataPangan->foto) ?>" class="artikel" alt="aaaa">
                     <div class="card-body">
                         <h4 class="card-title"><?php echo $dataPangan->nama_pangan ?></h3>
                     </div>
                     <hr>
-                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
