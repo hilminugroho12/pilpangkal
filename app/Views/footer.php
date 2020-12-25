@@ -61,15 +61,15 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="">Hilmi Nugroho J3C118154</a></li>
+                                    <a href="https://www.instagram.com/hilminugroho12/">Hilmi Nugroho J3C118154</a></li>
                                 <li>
-                                    <a href="">Defa Daniah J3C118139</a>
+                                    <a href="https://www.instagram.com/defa_daniah/">Defa Daniah J3C118139</a>
                                 </li>
                                 <li>
-                                    <a href="">Cika Mielenie A J3C218195</a>
+                                    <a href="https://www.instagram.com/cikamileni/">Cika Mielenie A J3C218195</a>
                                 </li>
                                 <li>
-                                    <a href="">Dimas Eka Putra J3C118083</a>
+                                    <a href="https://www.instagram.com/dimazdimzzzz/">Dimas Eka Putra J3C118083</a>
                                 </li>
                             </ul>
                         </nav>
@@ -81,15 +81,15 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="">Egie Hendyana P J3C218174</a>
+                                    <a href="https://www.instagram.com/hendythern/">Egie Hendyana P J3C218174</a>
                                 </li>
                                 <li>
-                                    <a href="">Danny Thorqurrohman J3C118130</a></li>
+                                    <a href="https://www.instagram.com/dannythoriq/">Danny Thorqurrohman J3C118130</a></li>
                                 <li>
-                                    <a href="">Haidar Rasyid A M J3C118075</a>
+                                    <a href="https://www.instagram.com/haidarrasyid3/">Haidar Rasyid A M J3C118075</a>
                                 </li>
                                 <li>
-                                    <a href="">Kaisar Renaissanc Al-Ars J3C118088</a>
+                                    <a href="https://www.instagram.com/kaisarenaissnce/">Kaisar Renaissanc Al-Ars J3C118088</a>
                                 </li>
                             </ul>
                         </nav>
