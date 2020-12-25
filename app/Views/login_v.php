@@ -36,7 +36,7 @@
                         <?php 
                         } 
                 ?>
-                <form method="POST" action="<?php echo site_url('Beranda/login')?>">
+                <form method="POST" action="<?php echo site_url('Admin/login')?>">
                     <div class="form-group">
                       <label for="username" class="sr-only">Username</label>
                       <input type="text" name="username" id="username" class="form-control" placeholder="Username" required>
