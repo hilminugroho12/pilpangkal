@@ -44,7 +44,7 @@
                                             <td><?php echo $row->kode_pangan ?></td>
                                             <td><?php echo $row->nama_pangan ?></td>
                                             <td><img src="<?php echo base_url('assets/img/'.$row->foto) ?>" alt="" style="width:100px; height:100px;"></td>
-                                            <td><?php echo $row->deskripsi ?></td>
+                                            <td><p style="white-space: nowrap; width: 300px; overflow: hidden; text-overflow: ellipsis;"><?php echo $row->deskripsi; ?></p></td>
                                             <td><?php echo $row->author ?></td>
                                             <td>
                                                 <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Pangan/edit/'.$row->kode_pangan) ?>" ></a>

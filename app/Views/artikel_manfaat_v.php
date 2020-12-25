@@ -34,7 +34,7 @@
                 <div class="col-md-9">
                     <img src="<?php echo base_url('assets/img/'.$dataManfaat->foto) ?>" class="artikel" alt="">
                     <div class="card-body">
-                            <?php echo $dataManfaat->deskripsi ?>
+                            <p><?php echo $dataManfaat->deskripsi ?></p>
                     </div> 
                 </div>
                 <div class="col-md-3">

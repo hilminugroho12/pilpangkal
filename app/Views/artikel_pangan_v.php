@@ -33,7 +33,7 @@
                 <div class="col-md-9">
                     <img src="<?php echo base_url('assets/img/'.$dataPangan->foto) ?>" class="artikel" alt="">
                     <div class="card-body">
-                            <?php echo $dataPangan->deskripsi ?>
+                            <p><?php echo $dataPangan->deskripsi ?></p>
                     </div> 
                 </div>
                 <div class="col-md-3">
