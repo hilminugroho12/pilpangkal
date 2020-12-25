@@ -59,9 +59,8 @@ class Beranda extends BaseController
     public function logout()
     {
         $this->session->destroy();
-        return redirect()->to(site_url('Admin'));
+        return redirect()->to(site_url('Beranda'));
     }
 }
-
 ?>
 

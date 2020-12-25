@@ -15,7 +15,7 @@
                 {
                 ?> 
                     <div class="button-get-started text-center">
-                        <a href="<?php echo site_url('Beranda/logout')?>" class="btn btn-danger btn-fill btn-lg"> Logout </a>
+                        <a href="<?php echo site_url('Admin/logout')?>" class="btn btn-danger btn-fill btn-lg"> Logout </a>
                     </div>
                 <?php         
                 }

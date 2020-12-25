@@ -88,7 +88,6 @@ class Admin extends BaseController {
         ];
 
         $data = $adminModel->where($where)->find();
-        // var_dump($where);die;
         if (!empty($data)) {
             $this->session->set('username',$this->request->getPost('username'));
             $this->session->setFlashdata('response',['status' => 1,'message' => 'Berhasil Login']);     
@@ -96,7 +95,7 @@ class Admin extends BaseController {
         else{
             $this->session->setFlashdata('response',['status' => 0,'message' => 'Gagal Login']);  
         }
-        return redirect()->to(site_url('Admin'));
+        return redirect()->to(site_url('Beranda'));
     }
 
     public function logout()
