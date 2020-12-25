@@ -52,7 +52,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right pull-right">
                         <li>
-                            <a class="fa fa-power-off" href="<?php echo site_url('Beranda') ?>"><b class="hidden-xs"> Keluar</b> </a>
+                            <a class="fa fa-power-off" href="<?php echo site_url('Admin/logout') ?>"><b class="hidden-xs"> Keluar</b> </a>
                         </li>
                     </ul>
                 </div>
