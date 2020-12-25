@@ -40,7 +40,6 @@
                     <img src="<?php echo base_url('assets/img/'.$dataResep->foto) ?>" class="artikel" alt="aaaa">
                     <div class="card-body">
                         <h4 class="card-title"><?php echo $dataResep->judul ?></h3>
-                        <a href="<?php echo site_url('Resep/tampil'.$dataResep->kode_resep) ?>" class="card-text">Selengkapnya..</p>
                     </div>
                     <hr>
                 </div>

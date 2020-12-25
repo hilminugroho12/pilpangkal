@@ -41,7 +41,6 @@
                     <img src="<?php echo base_url('assets/img/'.$dataPangan->foto) ?>" class="artikel" alt="aaaa">
                     <div class="card-body">
                         <h4 class="card-title"><?php echo $dataPangan->nama_pangan ?></h3>
-                        <a href="<?php echo site_url('Pangan/tampil/'.$dataPangan->kode_pangan) ?>" class="card-text">Selengkapnya..</p>
                     </div>
                     <hr>
                     <?php endforeach; ?>

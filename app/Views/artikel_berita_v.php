@@ -40,7 +40,6 @@
                     <img src="<?php echo base_url('assets/img/'.$dataBerita->foto); ?>" class="artikel" alt="aaaa">
                     <div class="card-body">
                         <h4 class="card-title"><?php echo $dataBerita->judul ?></h3>
-                        <a href="<?php echo site_url('Aritkel_Berita/tampil/'.$dataBerita->kode_berita) ?>" class="card-text">Selengkapnya..</p>
                     </div>
                     <hr>                    
                 </div>                

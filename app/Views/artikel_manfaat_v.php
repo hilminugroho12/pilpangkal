@@ -38,14 +38,11 @@
                     </div> 
                 </div>
                 <div class="col-md-3">
-                    <?php foreach($dataManfaat as $row): ?>
                     <img src="<?php echo base_url('assets/img/'.$dataManfaat->foto) ?>" class="artikel" alt="aaaa">
                     <div class="card-body">
                         <h4 class="card-title"><?php echo $dataManfaat->judul ?></h3>
-                        <a href="<?php echo site_url('Manfaat/tampil'.$dataManfaat->kode_manfaat) ?>" class="card-text">Selengkapnya..</p>
                     </div>
                     <hr>
-                    <?php endforeach ?>
                 </div>
             </div>
         </div>
