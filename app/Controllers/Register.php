@@ -61,13 +61,6 @@ class Register extends BaseController {
 
     public function delete($id) {
         $response = $this->memberModel->delete($id);
-        
-        if ($response) {
-            $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data berhasil dihapus.']);
-        } else {
-            $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
-        }
-
         return redirect()->to(site_url('Admin_Member'));
     }
 

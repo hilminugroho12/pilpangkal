@@ -37,7 +37,7 @@ class Admin extends BaseController {
     }
 
     public function edit($id) {
-        $data['dataBertia'] = $this->adminModel->find($id);
+        $data['dataAdmin'] = $this->adminModel->find($id);
         
         echo view('admin_form_v', $data);        
     }
@@ -76,13 +76,6 @@ class Admin extends BaseController {
 
     public function delete($id) {
         $response = $this->adminModel->delete($id);
-        
-        if ($response) {
-            $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data berhasil dihapus.']);
-        } else {
-            $this->session->setFlashdata('response', ['status' => $response, 'message' => 'Data gagal dihapus.']);
-        }
-
         return redirect()->to(site_url('Admin'));
     }
 

@@ -45,7 +45,7 @@
                                             <td><?php echo $row->password ?></td>
                                             <td>
                                                 <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Admin/edit/'.$row->kode_admin) ?>" ></a>
-                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Admin/delete/'.$row->kode_admin); ?>"></a>
+                                                <a class="fa fa-trash-o btn btn-danger" onclick="return confirm('Apakah anda yakin?')" href="<?php echo site_url('Admin/delete/'.$row->kode_admin); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach; ?>

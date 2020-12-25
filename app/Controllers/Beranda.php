@@ -53,13 +53,13 @@ class Beranda extends BaseController
         else{
             $this->session->setFlashdata('response',['status' => 0,'message' => 'Gagal Login']);  
         }
-        return redirect()->to(site_url('Beranda'));
+        return redirect()->to(site_url('Admin'));
     }
 
     public function logout()
     {
         $this->session->destroy();
-        return redirect()->to(site_url('Beranda'));
+        return redirect()->to(site_url('Admin'));
     }
 }
 
