@@ -48,7 +48,7 @@
                                             <td><?php echo $row->author ?></td>
                                             <td>
                                                 <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Pangan/edit/'.$row->kode_pangan) ?>" ></a>
-                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Pangan/delete/'.$row->kode_pangan); ?>"></a>
+                                                <a class="fa fa-trash-o btn btn-danger" onclick="return confirm('Apakah anda yakin?')" href="<?php echo site_url('Pangan/delete/'.$row->kode_pangan); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach ?>

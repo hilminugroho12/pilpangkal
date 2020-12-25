@@ -37,7 +37,7 @@ class Admin extends BaseController {
     }
 
     public function edit($id) {
-        $data['dataBertia'] = $this->adminModel->find($id);
+        $data['dataAdmin'] = $this->adminModel->find($id);
         
         echo view('admin_form_v', $data);        
     }

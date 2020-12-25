@@ -43,7 +43,7 @@
                                             <td><?php echo $row->password ?></td>
                                             <td>
                                                 <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Register/edit/'.$row->kode_member) ?>" ></a>
-                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Register/delete/'.$row->kode_member); ?>"></a>
+                                                <a class="fa fa-trash-o btn btn-danger" onclick="return confirm('Apakah anda yakin?')" href="<?php echo site_url('Register/delete/'.$row->kode_member); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach ?>

@@ -50,7 +50,7 @@
                                             <td><?php echo $row->author ?></td>
                                             <td>
                                                 <a class="fa fa-edit btn btn-success" href="<?php echo site_url('Resep/edit/'.$row->kode_resep) ?>" ></a>
-                                                <a class="fa fa-trash-o btn btn-danger" href="<?php echo site_url('Resep/delete/'.$row->kode_resep); ?>"></a>
+                                                <a class="fa fa-trash-o btn btn-danger" onclick="return confirm('Apakah anda yakin?')" href="<?php echo site_url('Resep/delete/'.$row->kode_resep); ?>"></a>
                                             </td>
                                         </tr>
                                         <?php endforeach; ?>
