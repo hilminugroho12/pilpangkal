@@ -60,7 +60,7 @@
                                 <div class="form-group">
                                     <label class="col-md-12">Kode Manfaat</label>
                                     <div class="col-md-12">
-                                        <input type="text" name="kode_manfaat" class="form-control form-control-line" value="<?php if (!empty($dataManfaat)) echo $dataManfaat->kode_manfaat; ?>"> </div>
+                                        <input type="text" required name="kode_manfaat" class="form-control form-control-line" value="<?php if (!empty($dataManfaat)) echo $dataManfaat->kode_manfaat; ?>"> </div>
                                         <input type="hidden" id="id" name="id" value="<?php if (!empty($dataManfaat)) echo $dataManfaat->kode_manfaat; ?>">
                                 </div>
                                 <div class="form-group">
@@ -102,17 +102,17 @@
             <footer class="footer text-center"></footer>
     <!-- /#wrapper -->
     <!-- jQuery -->
-    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="<?php echo base_url('assets/plugins/bower_components/jquery/dist/jquery.min.js') ?>"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('assets/bootstrap/dist/js/bootstrap.min.js') ?>"></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="<?php echo base_url('assets/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js') ?>"></script>
     <!--slimscroll JavaScript -->
-    <script src="js/jquery.slimscroll.js"></script>
+    <script src="<?php echo base_url('assets/js/jquery.slimscroll.js') ?>"></script>
     <!--Wave Effects -->
-    <script src="js/waves.js"></script>
+    <script src="<?php echo base_url('assets/js/waves.js') ?>"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="js/custom.min.js"></script>
+    <script src="<?php echo base_url('assets/js/custom.min.js') ?>"></script>
 </body>
 
 </html>
