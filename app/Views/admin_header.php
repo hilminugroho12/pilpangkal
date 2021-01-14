@@ -65,10 +65,6 @@
                 <div class="sidebar-nav navbar-collapse slimscrollsidebar">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="<?php echo site_url('Admin'); ?>" class="waves-effect"><i class="fa fa-user fa-fw"
-                                    aria-hidden="true"></i><span class="hide-menu">Admin</span></a>
-                        </li>
-                        <li>
                             <a href="<?php echo site_url('Admin_Member'); ?>" class="waves-effect"><i class="fa fa-users fa-fw"
                                     aria-hidden="true"></i><span class="hide-menu">Member</span></a>
                         </li>

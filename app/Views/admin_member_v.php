@@ -16,6 +16,11 @@
                 </div>
                 <!-- /row -->
                 <div class="row">
+                    <div class="col-md-4">
+                        <a href="<?php echo site_url('Register/add') ?>"><button class="fa fa-plus btn btn-danger"> Tambah Member</button></a>
+                    </div>
+                    <br>
+                    <br>
                     <div class="col-sm-12">
                         <div class="white-box">
                             <h3 class="box-title">Data Member</h3>

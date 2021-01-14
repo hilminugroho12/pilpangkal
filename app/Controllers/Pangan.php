@@ -34,7 +34,7 @@ class Pangan extends BaseController {
             'kode_pangan' => $this->request->getPost('kode_pangan'),
             'kode_admin' => $this->request->getPost('kode_admin'),
             'nama_pangan' => $this->request->getPost('nama_pangan'),
-            'author' => $this->request->getPost('deskripsi'),
+            'author' => $this->request->getPost('author'),
             'deskripsi' => $this->request->getPost('deskripsi'),
             'foto' => $this->request->getPost('foto')
         ];

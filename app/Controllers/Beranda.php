@@ -35,32 +35,6 @@ class Beranda extends BaseController
     {
         return view('login_v');
     }
-
-    public function login()
-    { 
-        $adminModel = new Admin_Model();
-        $where = [
-            'username' => $this->request->getPost('username'),
-            'password' => md5($this->request->getPost('password'))
-        ];
-
-        $data = $adminModel->where($where)->find();
-        // var_dump($where);die;
-        if (!empty($data)) {
-            $this->session->set('username',$this->request->getPost('username'));
-            $this->session->setFlashdata('response',['status' => 1,'message' => 'Berhasil Login']);     
-        }
-        else{
-            $this->session->setFlashdata('response',['status' => 0,'message' => 'Gagal Login']);  
-        }
-        return redirect()->to(site_url('Admin'));
-    }
-
-    public function logout()
-    {
-        $this->session->destroy();
-        return redirect()->to(site_url('Beranda'));
-    }
 }
 ?>
 

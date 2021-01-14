@@ -22,14 +22,15 @@ class Admin extends BaseController {
 
     public function index() {   
         $data['session'] = $this->session->getFlashdata('response');
-        $data['dataAdmin'] = $this->adminModel->findAll();
+        $data['isLogin'] = $this->session->get('username');
+        $data['dataAdmin'] = $this->adminModel->findAll();        
         $data['dataMember'] = $this->memberModel->findAll();
         $data['dataPangan'] = $this->panganModel->findAll();
         $data['dataBerita'] = $this->beritaModel->findAll();
         $data['dataManfaat'] = $this->manfaatModel->findAll();
         $data['dataResep'] = $this->resepModel->findAll();
 
-        echo view('admin_v', $data);        
+        echo view('admin_member_v', $data);        
     }
 
     public function add() {        
@@ -94,6 +95,7 @@ class Admin extends BaseController {
         }
         else{
             $this->session->setFlashdata('response',['status' => 0,'message' => 'Gagal Login']);  
+            echo "<script>alert('Gagal di tambahkan!');history.go(-1);</script>";
         }
         return redirect()->to(site_url('Beranda'));
     }

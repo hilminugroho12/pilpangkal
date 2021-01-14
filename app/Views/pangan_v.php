@@ -23,12 +23,6 @@
                     <h2>Pangan Lokal Kita!</h2>
                     <div class="separator separator-danger">✻</div>
                     <p class="description">Hasil bumi Indonesia</p>
-                    <?php 
-                    if (!empty($isLogin)) 
-                    {
-                    ?> 
-                        <a href="<?php echo site_url('Pangan/add');?>" type="btn btn-primary">Upload Pangan Lokal</a>
-                    <?php } ?>
                 </div>
             </div>
             

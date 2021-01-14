@@ -18,6 +18,10 @@ class Register extends BaseController {
         echo view('register_v');        
     }
 
+    public function add() {        
+        echo view('register_v');
+    }
+
     public function edit($id) {
         $data['dataMember'] = $this->memberModel->find($id);
         
@@ -56,7 +60,7 @@ class Register extends BaseController {
             }
         }
 
-        return redirect()->to(site_url('Beranda/login'));
+        return redirect()->to(site_url('Admin/login'));
     }
 
     public function delete($id) {
